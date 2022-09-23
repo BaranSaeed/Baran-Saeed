@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+:root{
+    --blackColor: #000;
+    --linkColor: rgb(38, 188, 207);
+
+    --light: 80;
+    /* the threshold at which colors are considered "light." Range: integers from 0 to 100,
+  recommended 50 - 70 */
+    --threshold: 60;
+}
+* {
+    font-family: "Source Code Pro";
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+#main-container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#hero-section {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.section-pages {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#myImg {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#media-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#media-section a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+#media-section a:hover{
+    color: rgb(133, 232, 245);
+}
+
+#skills-qualifications ul {
+    list-style-type: none;
+}
+
+#techstack-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+#tech-card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5em 10em;
+    align-items: center;
+}
+
+p , span, li {
+    font-size: 1em;
+}
+
+#work-history-card {
+    border-left: 1px solid gray;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.card-projects-certifications {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid grey;
+}
+
+.card-projects-certifications a{
+    text-decoration: none;
+    color: var(--linkColor);
+    transition: 1s;
+}
+
+.card-projects-certifications a:hover{
+    color: rgb(133, 232, 245);
+}
+
+#footer-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
